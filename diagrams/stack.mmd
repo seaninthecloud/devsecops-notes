@@ -1,0 +1,5 @@
+flowchart LR
+  Dev[Dev Laptop] -->|git push| GH[GitHub]
+  GH -->|OIDC assume| AWS[(AWS Account)]
+  AWS -->|ECR| EKS[(EKS Cluster)]
+  EKS --> App[Service]
