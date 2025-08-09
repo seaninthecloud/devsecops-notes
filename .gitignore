@@ -1,0 +1,63 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+*.log
+
+# Documentation build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+_book/
+node_modules/
+.gitbook/
+
+# PDF outputs (if you generate PDFs from markdown)
+*.pdf
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Personal notes (if you want to keep private notes locally)
+private-notes/
+personal/
+drafts/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Package files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+
+# System files
+**/._*
+**/.DS_Store
