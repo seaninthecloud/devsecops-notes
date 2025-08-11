@@ -1,11 +1,11 @@
-## Terraform Brain Dump
+## 🧠 Terraform Brain Dump
 
-I did some starter tutorials on [Hashicorp's Dev Site] (https://developer.hashicorp.com/terraform/tutorials/). I love that they have a sim you can use to push out commands and test it out without the need of an **aws** env. Things learned (I use learned very liberally, I basically followed guides and used ChatGPT for help at times): 
+I did some starter tutorials on [Hashicorp's Dev Site](https://developer.hashicorp.com/terraform/tutorials/). I love that they have a sim you can use to push out commands and test it out without the need of an **aws** env. > **Things Learned:** (I use learned very liberally, I basically followed guides and used ChatGPT for help at times): 
 
-- You can make a terraform.tf file that has the configuration for terraform itself. It's called a terraform block (usually named **teraform.tf**) . It seems like you can have it at the top of your **main.tf** but the tutorial shows it as a separate file. The **main.tf** has the configuration of the infrastructure. For my learning, I'm using an AWS free account. So the config would look something like what's on tutorial: 
+- You can make a terraform.tf file that has the configuration for terraform itself. It's called a terraform block (usually named **terraform.tf**) . It seems like you can have it at the top of your **main.tf** but the tutorial shows it as a separate file. The **main.tf** has the configuration of the infrastructure. For my learning, I'm using an AWS free account. So the config would look something like what's on tutorial: 
 
 
-```
+```hcl
 provider "aws" {
   region = "us-west-2"
 }
@@ -31,13 +31,13 @@ resource "aws_instance" "app_server" {
 }
 ```
 
-### Commands I learned
+### 📜 Commands I Learned
 
 1. **terraform fmt** automatically puts the tf files in the format that Hashicorp recommends. 
-2. **terrafrom init** to initialize the terraform workspace
+2. **terraform init** to initialize the terraform workspace
 3. **terraform validate** to make sure you have a valid config set up
 4. **terraform apply** pushes out the configuration to the api of the chosen provider (in this case AWS)
-5. **terraform destroy** to destroy the configuration inside of the chose provider. So no headache on manually destroying infra as needed which is awesome. 
+5. **terraform destroy** to destroy the configuration inside of the chosen provider. So no headache on manually destroying infra as needed which is awesome. 
 
 ## git/Github TIL:
 
